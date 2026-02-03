@@ -24,6 +24,7 @@
     /* Fix for Safari/Chrome sometimes leaking corners */
     transform: translateZ(0); 
     -webkit-mask-image: -webkit-radial-gradient(white, black);
+    background-color: transparent; 
   }
 
   video { 
@@ -31,10 +32,11 @@
     height: 100%; 
     object-fit: cover; /* Ensures video fills the rounded box without stretching */
     display: block;    /* Removes bottom gap */
+    background-color: transparent; 
   }
 </style>
 </head>
-<body>
+<body style="background-color: transparent;">
 
   <div class="video-container">
     <video src="./flm-anim-1.mp4" autoplay loop muted playsinline></video>
