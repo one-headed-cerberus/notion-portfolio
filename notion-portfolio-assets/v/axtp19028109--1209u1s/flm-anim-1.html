@@ -2,45 +2,11 @@
 <html>
 <head>
 <style>
-  /* Remove default margins and hide scrollbars */
-  body, html { 
-    margin: 0; 
-    padding: 0; 
-    width: 100%; 
-    height: 100%; 
-    overflow: hidden; 
-    background: transparent !important; /* Ensures background matches Notion */
-  }
-
-  /* The container for the video */
-  .video-container {
-    width: 100%;
-    height: 100%;
-    
-    /* ROUNDED CORNERS MAGIC */
-    border-radius: 20px; /* Adjust this value for more/less roundness */
-    overflow: hidden;    /* This clips the video to the rounded corners */
-    
-    /* Fix for Safari/Chrome sometimes leaking corners */
-    transform: translateZ(0); 
-    -webkit-mask-image: -webkit-radial-gradient(white, black);
-    background-color: transparent; 
-  }
-
-  video { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; /* Ensures video fills the rounded box without stretching */
-    display: block;    /* Removes bottom gap */
-    background-color: transparent; 
-  }
+  body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000000; }
+  video { width: 100%; height: 100%; object-fit: cover; }
 </style>
 </head>
-<body style="background-color: transparent;">
-
-  <div class="video-container">
-    <video src="./flm-anim-1.mp4" autoplay loop muted playsinline></video>
-  </div>
-
+<body>
+  <video src="./flm-anim-1.mp4" autoplay loop muted playsinline></video>
 </body>
 </html>
